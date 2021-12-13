@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Aya Portfolio</title>
+		<link rel="stylesheet" href="https://use.typekit.net/xvw0qbb.css">
+		<link rel="stylesheet" type="text/css" href="works.css">
+		<script>document.documentElement.className = "js";
+
+var supportsCssVars = function supportsCssVars() {
+  var e,
+      t = document.createElement("style");
+  return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+};
+
+supportsCssVars();</script>
+	<link rel="stylesheet" href="mover.css"></head>
+	<body class="demo-1">
+		<main>
+			<div class="frame">
+				<div class="frame__title-wrap">
+					<h1 class="frame__title">Aya Papaya</h1>
+				</div>
+				<nav class="frame__links">
+					<a href="about.html">About</a>
+					<a href="works.html">Works</a>
+					<a href="https://www.facebook.com/ayazhan.gabitkyzy">Social Media</a>
+				</nav>
+			</div>
+			<nav class="menu">
+				<a href="https://ayag03.github.io/" class="menu__item">
+					<span data-splitting="" class="menu__item-title">Into the Sun</span>
+				</a>
+				<a href="https://aadilzakarya.github.io/commlab_comix/" class="menu__item">
+					<span data-splitting="" class="menu__item-title">Late for Party</span>
+				</a>
+				<a href="https://hanoodd.github.io/princess/" class="menu__item">
+					<span data-splitting="" class="menu__item-title">Hero Princess</span>
+				</a>
+				<a href="https://ehtishamoas.github.io/filmD2/" class="menu__item">
+					<span data-splitting="" class="menu__item-title">Story Behind D2</span>
+				</a>
+			</nav>
+		</main>
+		<div class="cursor">
+			<svg class="cursor__line cursor__line--horizontal" viewBox="0 0 200 20" preserveAspectRatio="none">
+				<defs>
+					<filter id="filter-noise-x" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox">
+						<feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="1" result="warp"></feTurbulence>
+						<feOffset dx="-30" result="warpOffset"></feOffset>
+						<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warpOffset"></feDisplacementMap>
+					</filter>
+				</defs>
+				<line class="cursor__line-element" x1="0" y1="10" x2="200" y2="10" shape-rendering="crispEdges" vector-effect="non-scaling-stroke"></line>
+			</svg>
+			<svg class="cursor__line cursor__line--vertical" viewBox="0 0 20 200" preserveAspectRatio="none">
+				<defs>
+					<filter id="filter-noise-y" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox">
+						<feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="1" result="warp"></feTurbulence>
+						<feOffset dy="-30" result="warpOffset"></feOffset>
+						<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warpOffset"></feDisplacementMap>
+					</filter>
+				</defs>
+				<line class="cursor__line-element" x1="10" y1="0" x2="10" y2="200" shape-rendering="crispEdges" vector-effect="non-scaling-stroke"></line>
+			</svg>
+		</div>
+		<script src="mover.js"></script>
+	</body>
+</html>
